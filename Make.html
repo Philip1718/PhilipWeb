@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="make.css">
+    <title>Make LayBay</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="image/a8e5ecdcec54441b9ab0d33727971cfb.png" alt="Your Logo">
+                    </div>
+                 
+                </div>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="Make.html">Make LayBay</a></li>
+                    <li><a href="LayBay.php">Lay-Bays</a></li>
+                </ul>
+            </nav>
+        </header
+        <div class="content">
+            <form action="http://localhost/HHLayB/src/connect.php" method="post">
+                <div class="form-group">
+                    <label for="firstName"></label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName"></label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="id"></label>
+                    <input type="text" name="id" id="id" placeholder="Enter 13-digit ID" pattern="[0-9]{13}" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel"></label>
+                    <input type="tel" name="tel" id="tel" placeholder="Telephone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="price"></label>
+                    <input type="number" name="price" id="price" placeholder="Price" required>
+                </div>
+                <div class="form-group">
+                    <label for="deposit"></label>
+                    <input type="number" name="deposit" id="deposit" placeholder="Deposit" required>
+                </div>
+                
+                
+                
+                <div class="form-group">
+                    <label for="bayArea"></label>
+                    <select name="bayArea" id="bayArea" required>
+                        <option value="">Select BayArea</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="layBayDate"></label>
+                    <input type="date" name="layBayDate" id="layBayDate" placeholder="LayBayDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="expireDates"></label>
+                    <input type="date" name="expireDates" id="expireDates" placeholder="ExpireDate">
+                </div>
+                
+                
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="db.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
